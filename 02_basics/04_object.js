@@ -42,3 +42,34 @@ console.log(Object.keys(user));
 console.log(Object.values(user));
 console.log(Object.entries(user));
 console.log(user.hasOwnProperty("isLoggedIn"));
+
+
+const course  = {
+    cousename :"hindi" ,
+    price : 400 ,
+    courseinstructor : "hitesh"
+}
+// course.courseinstructor
+const {courseinstructor:inst} = course // destructuring of objects
+console.log(inst);
+
+//  in react 
+// rather than writing props.company passs company in {}
+//const navbar=( {company})=>{
+
+// }
+// navbar(company = "hitesh")
+
+// //json value frm api
+// {
+// "name" = "hitesh" , 
+// "price" = "free"
+// "coursename" = "js in hindi "
+// }
+
+// //api in form of array
+// [
+//     {} ,
+//     {},
+//     {}
+// ]
